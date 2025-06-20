@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportBoard UNL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo-unl.png">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logo-unl.png" alt="Logo UNL" class="sidebar-logo">
+            <span class="sidebar-title">SportBoard UNL</span>
+            <span class="sidebar-subtitle">Universidad Nacional de Loja</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#inicio"><span class="icon">🏠</span>Inicio</a></li>
+                <li><a href="#competiciones"><span class="icon">🏆</span>Competiciones</a></li>
+                <li><a href="#equipos"><span class="icon">👥</span>Equipos</a></li>
+                <li><a href="#jugadores"><span class="icon">🧑‍🎓</span>Jugadores</a></li>
+                <li><a href="#ajustes"><span class="icon">⚙️</span>Ajustes</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <section id="inicio" class="panel active">
+            <h1>Bienvenido de nuevo, Andersson</h1>
+            <h2>Próximos Eventos</h2>
+            <div class="eventos-grid">
+                <div class="evento-card">
+                    <img src="../images/evento1.jpg" alt="Evento 1">
+                    <div>
+                        <h3>Campeonato de Baloncesto</h3>
+                        <p>Fecha: 15 de noviembre de 2025</p>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <img src="../images/evento2.jpg" alt="Evento 2">
+                    <div>
+                        <h3>Campeonato de Fútbol</h3>
+                        <p>Fecha: 22 de noviembre de 2025</p>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <img src="../images/evento3.jpg" alt="Evento 3">
+                    <div>
+                        <h3>Campeonato de Ecuavoley</h3>
+                        <p>Fecha: 1 de diciembre de 2025</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Resultados Recientes</h2>
+            <table class="tabla-resultados">
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Fecha</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Campeonato de Baloncesto</td>
+                        <td>10 de noviembre de 2024</td>
+                        <td>Equipo A vs. Equipo B: 75-68</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonato de Fútbol</td>
+                        <td>12 de noviembre de 2024</td>
+                        <td>Equipo C vs. Equipo D: 2-1</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonato de Ecuavoley</td>
+                        <td>14 de noviembre de 2024</td>
+                        <td>Equipo E vs. Equipo F: 3-2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tus Estadísticas</h2>
+            <div class="estadisticas-grid">
+                <div class="estadistica-card">
+                    <span class="estadistica-num">15</span>
+                    <span class="estadistica-label">Partidos Jugados</span>
+                </div>
+                <div class="estadistica-card">
+                    <span class="estadistica-num">10</span>
+                    <span class="estadistica-label">Partidos Ganados</span>
+                </div>
+                <div class="estadistica-card">
+                    <span class="estadistica-num">67%</span>
+                    <span class="estadistica-label">Tasa de Victorias</span>
+                </div>
+            </div>
+        </section>
+        <section id="competiciones" class="panel">
+            <h1>Competiciones</h1>
+            <div class="competiciones-bar">
+                <input type="text" placeholder="Buscar competiciones" class="input-buscar">
+                <button class="btn-nueva">Nueva Competición</button>
+            </div>
+            <div class="competiciones-tabs">
+                <button class="tab active">Todas</button>
+                <button class="tab">Activas</button>
+                <button class="tab">Archivadas</button>
+            </div>
+            <table class="tabla-resultados">
+                <thead>
+                    <tr>
+                        <th>Competición</th>
+                        <th>Formato</th>
+                        <th>Estado</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Fin</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Torneo Intercarreras de Fútbol UNL</td>
+                        <td>Todos contra Todos</td>
+                        <td><span class="estado activo">Activa</span></td>
+                        <td>2024-09-01</td>
+                        <td>2024-12-15</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Torneo Intercarreras de Baloncesto UNL</td>
+                        <td>Eliminación Directa</td>
+                        <td><span class="estado activo">Activa</span></td>
+                        <td>2024-10-05</td>
+                        <td>2024-11-20</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Torneo Intercarreras de Ecuavoley UNL</td>
+                        <td>Fase de Grupos</td>
+                        <td><span class="estado proxima">Próxima</span></td>
+                        <td>2024-11-01</td>
+                        <td>2024-12-10</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Abierto de Pin Pong UNL</td>
+                        <td>Eliminación Simple</td>
+                        <td><span class="estado archivada">Archivada</span></td>
+                        <td>2024-08-15</td>
+                        <td>2024-09-30</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gala de Ajedrez Universitaria UNL</td>
+                        <td>Series y Finales</td>
+                        <td><span class="estado archivada">Archivada</span></td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><a href="#">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="equipos" class="panel">
+            <h1>Gestión de Equipos</h1>
+            <div id="equipos-lista-panel">
+                <ul id="lista-equipos">
+                    <li class="equipo-item" data-equipo="Leones">Leones</li>
+                    <li class="equipo-item" data-equipo="Tigres">Tigres</li>
+                    <li class="equipo-item" data-equipo="Águilas">Águilas</li>
+                    <li class="equipo-item" data-equipo="Pumas">Pumas</li>
+                </ul>
+            </div>
+            <div id="contenedor-atletas">
+                <!-- Aquí se cargará la tabla de atletas del equipo seleccionado -->
+            </div>
+        </section>
+        <section id="jugadores" class="panel">
+            <h1>Ajustes</h1>
+            <form class="form-ajustes">
+                <h2>Información Personal</h2>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo Electrónico">
+                <input type="text" placeholder="Número de Teléfono">
+                <h2>Métricas de Salud</h2>
+                <input type="number" placeholder="Altura (cm)">
+                <input type="number" placeholder="Peso (kg)">
+                <h2>Preferencias</h2>
+                <select>
+                    <option>Selecciona un deporte</option>
+                    <option>Fútbol</option>
+                    <option>Baloncesto</option>
+                    <option>Ecuavoley</option>
+                </select>
+                <h2>Notificaciones</h2>
+                <label><input type="checkbox" checked> Recibir notificaciones por correo electrónico para actualizaciones de competiciones</label>
+                <label><input type="checkbox" checked> Recibir notificaciones por SMS para recordatorios de partidos</label>
+                <label><input type="checkbox"> Recibir notificaciones dentro de la aplicación para anuncios de equipos</label>
+                <button type="submit" class="btn-guardar">Guardar Cambios</button>
+            </form>
+        </section>
+        <section id="ajustes" class="panel">
+            <h1>Estadísticas de Competición</h1>
+            <div class="estadisticas-filtros">
+                <select><option>Seleccionar Deporte</option></select>
+                <select><option>Seleccionar Temporada</option></select>
+                <select><option>Seleccionar Competición</option></select>
+                <select><option>Seleccionar Equipo</option></select>
+                <select><option>Seleccionar Atleta</option></select>
+                <select><option>Seleccionar Métrica</option></select>
+                <button class="btn-filtrar">Aplicar Filtros</button>
+            </div>
+            <div class="estadisticas-paneles">
+                <div class="estadisticas-resumen">
+                    <div class="estadistica-card">
+                        <span class="estadistica-num">120</span>
+                        <span class="estadistica-label">Competiciones Totales</span>
+                    </div>
+                    <div class="estadistica-card">
+                        <span class="estadistica-num">30</span>
+                        <span class="estadistica-label">Equipos Totales</span>
+                    </div>
+                    <div class="estadistica-card">
+                        <span class="estadistica-num">450</span>
+                        <span class="estadistica-label">Atletas Totales</span>
+                    </div>
+                </div>
+                <div class="estadisticas-graficos">
+                    <div class="grafico-barra">
+                        <h3>Victorias de la Competición por Equipo</h3>
+                        <div class="barra">
+                            <div style="height:60px">Equipo A</div>
+                            <div style="height:55px">Equipo B</div>
+                            <div style="height:58px">Equipo C</div>
+                            <div style="height:20px">Equipo D</div>
+                            <div style="height:40px">Equipo E</div>
+                        </div>
+                    </div>
+                    <div class="grafico-linea">
+                        <h3>Rendimiento del Atleta a lo largo del Tiempo</h3>
+                        <canvas id="graficoRendimiento" width="300" height="100"></canvas>
+                    </div>
+                </div>
+                <div class="exportar-datos">
+                    <button class="btn-exportar">Exportar Datos</button>
+                    <div class="mensaje-exportar">Confirmación: Los datos se han exportado correctamente.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
